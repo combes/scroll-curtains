@@ -1,0 +1,59 @@
+/* Copyright 2016 Christopher Combes */
+.image-background {
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100% 100%;
+    height: 100vh;
+}
+
+@media screen and (max-width: 1200px) {
+    /* Make image background center on smaller screens. Avoids schrunching. */
+    .image-background {
+        background-size: cover;
+        background-position: center;
+    }
+}
+
+.area-text {
+    font-size: 4em;
+    line-height: 50vh;
+    text-align: center;
+}
+/* Overlay with top and bottom portions */
+
+.overlay {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    z-index: 1;
+}
+
+div.top {
+    height: 50%;
+    background: blue;
+}
+
+div.clear {
+    height: 50%;
+}
+
+div.bottom {
+    height: 50%;
+    background: green;
+}
+
+#background-1 {
+    background-image: url('../image/robert-lukeman-150146.jpg');
+}
+
+#background-2 {
+    background-image: url('../image/arto-marttinen-133621.jpg');
+}
+
+#background-3 {
+    background-image: url('../image/paul-morris-183942.jpeg');
+}
+
+#background-4 {
+    background-image: url('../image/bob-canning-58962.jpg');
+}

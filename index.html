@@ -1,0 +1,60 @@
+<!-- Copyright 2016 Christopher Combes -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Scroll Curtain Effect with CSS</title>
+    <style media="screen">
+        body {
+            padding: 0;
+            margin: 0;
+            color: white;
+        }
+    </style>
+    <link rel="stylesheet" href="css/curtains.css">
+</head>
+
+<body>
+  <!-- This static image remains in the background -->
+    <div id="background-1" class="image-background">
+        <div class="area-text">Here is some text.</div>
+    </div>
+    <!-- This overlay moves over top of the background image -->
+    <div class="overlay">
+        <div class="top">
+            <div class="area-text">Here is some text.</div>
+        </div>
+        <div class="bottom">
+            <div class="area-text">Here is some text.</div>
+        </div>
+    </div>
+    <!-- Three backgrounds with top area as transparent and bottom area opaque -->
+    <div id="background-2" class="image-background">
+        <div class="clear">
+            <div class="area-text">Here is some text.</div>
+        </div>
+        <div class="bottom">
+            <div class="area-text">Here is some text.</div>
+        </div>
+    </div>
+    <div id="background-3" class="image-background">
+        <div class="clear">
+            <div class="area-text">Here is some text.</div>
+        </div>
+        <div class="bottom">
+            <div class="area-text">Here is some text.</div>
+        </div>
+    </div>
+    <div id="background-4" class="image-background">
+        <div class="clear">
+            <div class="area-text">Here is some text.</div>
+        </div>
+        <div class="bottom">
+            <div class="area-text">Here is some text.</div>
+        </div>
+    </div>
+</body>
+
+</html>
