@@ -1,4 +1,11 @@
-/* Copyright 2016 Christopher Combes */
+/* Copyright 2017 Christopher Combes */
+
+body {
+    padding: 0;
+    margin: 0;
+    color: white;
+}
+
 .image-background {
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -6,8 +13,9 @@
     height: 100vh;
 }
 
-@media screen and (max-width: 2400px) { /* Set value to width of smallest background image */
-    /* Make image background center on screens smaller than image width. Avoids scrunching. */
+@media screen
+and (min-width: 736px)
+and (max-width: 2400px) {
     .image-background {
         background-size: cover;
         background-position: center;
@@ -19,6 +27,7 @@
     line-height: 50vh;
     text-align: center;
 }
+
 /* Overlay with top and bottom portions */
 
 .overlay {
@@ -40,6 +49,24 @@ div.clear {
 div.bottom {
     height: 50%;
     background: green;
+}
+
+@media screen and (max-width: 480px) {
+    .area-text {
+      font-size: 2em;
+      text-align: center;
+    }
+    #background-1 {
+      background-size: 480px 100vh;
+    }
+}
+
+@media screen
+and (min-width : 480px)
+and (max-width : 736px) {
+  #background-1 {
+    background-size: 736px 100vh;
+  }
 }
 
 #background-1 {
